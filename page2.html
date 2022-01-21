@@ -85,31 +85,35 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-12">
-						<form id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<form id="form_1" novalidate success-msg="Votre message a été envoyé"
+							fail-msg="Veuillez nous excuser. Il semble que notre serveur de messagerie ne réponde pas. Désolé pour le désagrément! ">
 							<div class="form-group">
-								<label>
+								<label for="name">
 									Nom
 								</label>
-								<input id="name" class="form-control" required />
+								<input id="name" class="form-control" placeholder="Jean DUPONT" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="email">
 									Adresse email
 								</label>
-								<input id="email" class="form-control" type="email" required />
+								<input id="email" class="form-control" type="email"
+									placeholder="jean.dupont@lachouetteagence.com" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="form-control">
 									Comment nous avez-vous connu ?
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<input class="form-control" type="email"
+									placeholder="Publicité, moteur de recherche, recommandation d'un proche ou d'une entreprise, etc."
+									required id="input_504" />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="message">
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-								</label><textarea id="message" class="form-control" rows="4" cols="50"
-									required></textarea>
+								</label><textarea id="message" class="form-control"
+									placeholder="Bonjour, je cherche une agence pour concevoir le site d'un nouveau journal local, etc."
+									rows="4" cols="50" required></textarea>
 							</div>
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">
